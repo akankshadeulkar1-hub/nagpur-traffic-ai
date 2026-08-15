@@ -1,8 +1,17 @@
+/**
+ * App.jsx - Nagpur Traffic Command Center Dashboard & Multi-Screen Orchestrator
+ * -------------------------------------------------------------------------------
+ * Purpose: Real-time control room dashboard layout pairing live Nagpur city traffic map
+ * telemetry with Explainable AI (XAI) dispatch recommendations and multi-screen auth workflow.
+ */
+
 import React, { useState } from 'react';
 import SplashScreen from './components/SplashScreen';
 import LandingPage from './components/LandingPage';
 import LoginPage from './components/LoginPage';
 import CommandDashboard from './components/CommandDashboard';
+import TrafficMap from './components/TrafficMap';
+import Alerts from './components/Alerts';
 import './App.css';
 
 /**
@@ -11,7 +20,7 @@ import './App.css';
  * 1. Screen 1: Splash Screen (Auto-dismisses after 2.5s)
  * 2. Screen 2: Introductory / Landing Page (Separate Full Screen)
  * 3. Screen 3: Dedicated Authorization & Login Page (Y-axis Slide Down)
- * 4. Screen 4: Live Tactical Command Dashboard
+ * 4. Screen 4: Live Tactical Command Dashboard with XAI Alerts
  */
 function App() {
   // Screen state: 'SPLASH' | 'LANDING' | 'LOGIN' | 'AUTHENTICATING' | 'DASHBOARD'
@@ -71,7 +80,7 @@ function App() {
 
   return (
     <div className="relative min-h-screen bg-[#0B0E14] text-slate-100 font-sans selection:bg-[#00D8F6] selection:text-black overflow-x-hidden">
-      
+
       {/* Screen 1: Splash Screen */}
       {currentScreen === 'SPLASH' && (
         <SplashScreen onComplete={handleSplashComplete} />

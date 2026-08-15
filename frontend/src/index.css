@@ -2,6 +2,19 @@
 
 @layer base {
   :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #0d1117;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
     --bg-base: #0D1117;
     --card-surface: #151922;
     --card-border: #212936;
@@ -15,6 +28,7 @@
     --text-secondary: #8B949E;
   }
 
+  html,
   body {
     background-color: #0D1117;
     color: #FFFFFF;
@@ -38,7 +52,7 @@
 
 /* Custom Tactical Background Grid Overlay */
 .bg-tactical-grid {
-  background-image: 
+  background-image:
     linear-gradient(to right, rgba(34, 211, 238, 0.035) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(34, 211, 238, 0.035) 1px, transparent 1px);
   background-size: 32px 32px;
@@ -59,6 +73,7 @@
 .tactical-card-v3-hover {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .tactical-card-v3-hover:hover {
   border-color: rgba(34, 211, 238, 0.4);
   box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.85), 0 0 25px -3px rgba(34, 211, 238, 0.18);
@@ -70,9 +85,11 @@
     transform: scale(0.6);
     opacity: 0.9;
   }
+
   50% {
     opacity: 0.5;
   }
+
   100% {
     transform: scale(2.4);
     opacity: 0;
@@ -82,6 +99,7 @@
 .animate-sonar-pulse {
   animation: sonar-pulse 2.5s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
+
 .animate-sonar-pulse-delayed {
   animation: sonar-pulse 2.5s cubic-bezier(0, 0.2, 0.8, 1) infinite 1.25s;
 }
@@ -90,17 +108,26 @@
 .glow-coral {
   box-shadow: 0 0 30px rgba(250, 82, 82, 0.5);
 }
+
 .glow-cyan-v3 {
   box-shadow: 0 0 25px rgba(34, 211, 238, 0.4);
 }
+
 .text-glow-cyan-v3 {
   text-shadow: 0 0 14px rgba(34, 211, 238, 0.7);
 }
 
 /* Typewriter Cursor */
 @keyframes cursor-blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
 
 .typewriter-cursor::after {
@@ -116,6 +143,7 @@
     opacity: 0;
     transform: translateY(16px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -127,7 +155,8 @@
 }
 
 /* Leaflet Dark Popup Customization */
-.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
   background: #151922 !important;
   color: #FFFFFF !important;
   border: 1px solid #212936 !important;
@@ -135,17 +164,24 @@
 }
 
 /* Custom Scrollbar */
-::-webkit-scrollbar {
+::-webkit-scrollbar,
+.custom-scrollbar::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
-::-webkit-scrollbar-track {
+
+::-webkit-scrollbar-track,
+.custom-scrollbar::-webkit-scrollbar-track {
   background: #0D1117;
 }
-::-webkit-scrollbar-thumb {
+
+::-webkit-scrollbar-thumb,
+.custom-scrollbar::-webkit-scrollbar-thumb {
   background: #212936;
   border-radius: 3px;
 }
-::-webkit-scrollbar-thumb:hover {
+
+::-webkit-scrollbar-thumb:hover,
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #22D3EE;
 }
