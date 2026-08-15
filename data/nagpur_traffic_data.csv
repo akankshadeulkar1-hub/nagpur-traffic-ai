@@ -1,6 +1,1001 @@
-junction_id,junction_name,latitude,longitude,vehicle_count,average_speed_kmh,weather_condition,congestion_level,risk_score
-J01,Variety Square,21.1458,79.0882,450,18,Clear,High,0.78
-J02,Zero Mile Freedom Park,21.1498,79.0806,380,22,Clear,Medium,0.55
-J03,Rahate Colony Square,21.1242,79.0763,510,12,Rainy,Severe,0.91
-J04,Medical Square,21.1347,79.0984,420,15,Clear,High,0.72
-J05,Chhatrapati Square,21.1105,79.0614,490,14,Clear,Severe,0.85
+Time_of_Day,Weather_Condition,Road_Type,Vehicle_Count,Historical_Accident_Rate,Risk_Score
+Evening Rush,Rainy,Local,353,1.72,77.27
+Night,Foggy,Intersection,499,3.81,100.0
+Morning Rush,Clear,Arterial,461,2.64,56.97
+Evening Rush,Clear,Intersection,166,1.1,57.27
+Evening Rush,Clear,Intersection,270,4.4,93.08
+Night,Clear,Local,203,4.41,54.54
+Morning Rush,Cloudy,Intersection,202,4.37,85.71
+Morning Rush,Clear,Local,61,1.27,31.52
+Evening Rush,Cloudy,Highway,182,2.31,73.7
+Afternoon,Cloudy,Highway,353,4.93,87.04
+Evening Rush,Clear,Local,342,3.88,68.16
+Evening Rush,Clear,Highway,349,0.23,54.74
+Evening Rush,Rainy,Arterial,277,0.42,60.5
+Evening Rush,Foggy,Intersection,320,2.37,95.22
+Night,Clear,Arterial,92,4.56,62.64
+Morning Rush,Rainy,Intersection,481,2.74,88.52
+Night,Rainy,Highway,392,2.54,80.53
+Night,Foggy,Arterial,375,0.62,63.69
+Night,Cloudy,Highway,351,3.32,70.31
+Evening Rush,Clear,Intersection,413,4.13,94.92
+Afternoon,Foggy,Local,428,1.96,62.4
+Morning Rush,Clear,Local,476,3.9,72.34
+Afternoon,Rainy,Arterial,70,4.83,82.68
+Night,Rainy,Highway,456,1.1,70.19
+Night,Cloudy,Highway,156,2.66,49.81
+Afternoon,Rainy,Arterial,385,1.51,58.3
+Afternoon,Rainy,Local,352,3.98,87.27
+Afternoon,Foggy,Intersection,166,2.93,78.48
+Night,Clear,Arterial,173,3.21,54.1
+Night,Clear,Intersection,448,4.01,82.59
+Morning Rush,Foggy,Local,330,2.04,81.44
+Morning Rush,Cloudy,Highway,341,4.58,95.89
+Night,Clear,Local,252,2.71,51.22
+Afternoon,Rainy,Arterial,100,0.87,37.83
+Afternoon,Clear,Highway,320,3.51,64.7
+Morning Rush,Rainy,Arterial,373,3.99,97.66
+Night,Cloudy,Arterial,326,1.65,46.05
+Morning Rush,Foggy,Local,190,4.3,86.25
+Morning Rush,Clear,Arterial,324,4.54,86.89
+Evening Rush,Foggy,Local,339,1.46,71.66
+Evening Rush,Clear,Highway,383,4.92,100.0
+Evening Rush,Rainy,Local,430,0.79,70.09
+Afternoon,Foggy,Highway,422,1.09,69.82
+Night,Clear,Local,101,1.0,26.3
+Night,Rainy,Intersection,76,4.48,85.84
+Night,Foggy,Intersection,206,3.31,92.37
+Night,Foggy,Arterial,288,0.85,67.11
+Evening Rush,Clear,Local,205,2.26,54.21
+Afternoon,Clear,Local,340,3.11,50.47
+Afternoon,Clear,Highway,185,0.51,36.06
+Evening Rush,Rainy,Arterial,193,4.42,95.99
+Afternoon,Clear,Local,155,4.04,48.5
+Evening Rush,Foggy,Arterial,469,2.58,95.33
+Night,Foggy,Intersection,207,4.84,100.0
+Evening Rush,Clear,Local,195,2.15,40.71
+Night,Clear,Local,51,4.92,62.66
+Night,Cloudy,Arterial,482,3.37,77.03
+Morning Rush,Foggy,Local,126,3.21,75.79
+Evening Rush,Rainy,Arterial,181,0.91,66.87
+Morning Rush,Cloudy,Local,139,4.42,72.97
+Evening Rush,Clear,Highway,394,2.19,78.37
+Evening Rush,Clear,Arterial,399,0.89,46.11
+Morning Rush,Foggy,Local,312,0.16,58.23
+Morning Rush,Clear,Intersection,400,2.84,69.31
+Evening Rush,Rainy,Local,157,2.68,65.0
+Afternoon,Foggy,Intersection,123,3.62,75.94
+Night,Clear,Intersection,88,4.46,75.81
+Morning Rush,Foggy,Highway,446,0.49,73.66
+Night,Clear,Arterial,208,3.68,57.72
+Afternoon,Clear,Local,120,1.02,11.13
+Afternoon,Clear,Highway,496,4.31,74.49
+Afternoon,Rainy,Local,361,4.11,80.56
+Morning Rush,Rainy,Intersection,290,2.75,93.07
+Afternoon,Foggy,Arterial,475,3.58,89.72
+Morning Rush,Clear,Local,494,1.64,52.42
+Afternoon,Clear,Local,347,2.41,41.1
+Night,Rainy,Intersection,489,4.13,100.0
+Night,Clear,Local,85,2.35,31.81
+Evening Rush,Rainy,Local,133,1.85,60.32
+Night,Clear,Intersection,423,2.52,64.66
+Evening Rush,Foggy,Highway,312,4.16,100.0
+Night,Clear,Intersection,359,1.74,51.57
+Morning Rush,Clear,Highway,434,0.95,52.54
+Night,Cloudy,Arterial,221,3.59,65.56
+Evening Rush,Rainy,Highway,425,4.15,100.0
+Evening Rush,Clear,Highway,222,0.59,46.43
+Afternoon,Clear,Arterial,411,1.28,34.2
+Morning Rush,Cloudy,Highway,96,0.8,36.25
+Night,Cloudy,Intersection,428,1.8,65.62
+Afternoon,Rainy,Highway,190,2.31,57.4
+Night,Cloudy,Arterial,424,3.77,63.94
+Night,Foggy,Intersection,455,3.29,100.0
+Afternoon,Cloudy,Arterial,167,3.14,58.32
+Afternoon,Foggy,Arterial,326,1.83,64.01
+Afternoon,Rainy,Local,263,4.22,74.38
+Afternoon,Rainy,Local,269,2.41,64.89
+Afternoon,Rainy,Arterial,442,4.9,90.95
+Night,Rainy,Arterial,75,3.21,63.28
+Afternoon,Rainy,Arterial,58,0.72,43.06
+Morning Rush,Foggy,Local,320,3.41,86.95
+Evening Rush,Foggy,Local,59,1.69,69.58
+Afternoon,Rainy,Highway,427,3.46,75.98
+Afternoon,Cloudy,Highway,170,0.44,24.2
+Night,Clear,Arterial,174,0.96,31.63
+Afternoon,Rainy,Intersection,219,4.29,93.75
+Afternoon,Cloudy,Intersection,121,1.21,46.17
+Afternoon,Clear,Local,201,4.2,55.91
+Night,Rainy,Local,257,1.47,55.8
+Afternoon,Rainy,Local,98,3.25,59.47
+Evening Rush,Foggy,Arterial,203,3.5,100.0
+Night,Clear,Intersection,396,2.61,61.42
+Evening Rush,Clear,Highway,342,1.6,61.48
+Night,Cloudy,Arterial,117,1.14,31.14
+Afternoon,Foggy,Highway,99,0.26,49.23
+Evening Rush,Foggy,Highway,201,1.59,73.75
+Night,Foggy,Arterial,68,3.3,79.44
+Morning Rush,Foggy,Highway,149,4.7,100.0
+Afternoon,Clear,Intersection,109,4.37,76.78
+Night,Clear,Highway,216,3.85,65.73
+Morning Rush,Rainy,Intersection,251,3.96,100.0
+Night,Rainy,Intersection,394,3.36,90.46
+Morning Rush,Foggy,Intersection,195,1.38,75.16
+Afternoon,Foggy,Local,452,4.55,94.11
+Evening Rush,Foggy,Highway,213,3.39,89.78
+Morning Rush,Rainy,Arterial,488,2.85,80.93
+Night,Cloudy,Arterial,291,0.64,41.04
+Afternoon,Cloudy,Highway,118,2.29,46.89
+Morning Rush,Rainy,Local,224,2.36,64.6
+Night,Rainy,Local,98,4.34,73.64
+Night,Rainy,Intersection,157,2.78,75.59
+Night,Rainy,Highway,275,1.96,71.16
+Morning Rush,Rainy,Highway,210,4.89,100.0
+Morning Rush,Rainy,Arterial,168,0.64,42.66
+Morning Rush,Foggy,Highway,198,2.17,86.68
+Evening Rush,Foggy,Local,199,0.31,62.77
+Morning Rush,Foggy,Highway,481,3.73,94.89
+Morning Rush,Foggy,Arterial,342,4.6,100.0
+Morning Rush,Rainy,Intersection,192,1.47,77.66
+Evening Rush,Cloudy,Arterial,468,4.31,91.82
+Morning Rush,Clear,Arterial,209,1.53,37.17
+Night,Rainy,Intersection,60,4.56,98.08
+Morning Rush,Clear,Arterial,187,3.79,64.17
+Night,Cloudy,Arterial,127,4.04,68.22
+Night,Foggy,Highway,126,0.19,63.04
+Night,Cloudy,Highway,490,4.82,94.06
+Evening Rush,Rainy,Intersection,303,3.66,99.14
+Evening Rush,Foggy,Highway,458,1.59,87.54
+Evening Rush,Rainy,Highway,307,4.16,99.93
+Morning Rush,Foggy,Arterial,369,1.48,76.73
+Night,Clear,Local,340,4.38,63.37
+Evening Rush,Clear,Highway,312,0.65,46.62
+Evening Rush,Clear,Local,134,3.55,54.44
+Morning Rush,Cloudy,Highway,195,2.75,64.64
+Evening Rush,Rainy,Highway,372,0.57,71.46
+Morning Rush,Cloudy,Intersection,91,1.29,38.12
+Afternoon,Clear,Intersection,423,0.16,39.82
+Evening Rush,Rainy,Intersection,174,2.4,85.73
+Afternoon,Clear,Local,216,1.58,25.62
+Morning Rush,Cloudy,Arterial,474,3.03,84.4
+Night,Cloudy,Highway,290,1.56,56.99
+Evening Rush,Cloudy,Highway,329,1.57,58.38
+Morning Rush,Clear,Highway,237,3.74,76.07
+Night,Rainy,Local,351,0.34,53.66
+Night,Rainy,Intersection,68,4.52,93.58
+Afternoon,Clear,Arterial,117,4.28,59.29
+Morning Rush,Rainy,Local,267,3.37,81.07
+Night,Clear,Intersection,151,3.01,50.71
+Evening Rush,Rainy,Local,91,4.47,87.41
+Evening Rush,Foggy,Arterial,337,1.01,72.39
+Afternoon,Foggy,Intersection,216,0.49,65.69
+Night,Cloudy,Local,158,1.27,35.69
+Morning Rush,Foggy,Arterial,85,3.99,86.81
+Evening Rush,Foggy,Highway,281,0.27,68.49
+Night,Foggy,Arterial,278,2.96,85.84
+Night,Clear,Highway,402,4.98,84.96
+Afternoon,Foggy,Local,213,4.29,77.93
+Evening Rush,Foggy,Intersection,436,2.66,100.0
+Evening Rush,Cloudy,Intersection,122,0.41,53.68
+Morning Rush,Foggy,Local,185,4.17,91.58
+Evening Rush,Foggy,Intersection,402,3.03,100.0
+Morning Rush,Rainy,Intersection,428,0.66,74.68
+Evening Rush,Cloudy,Highway,119,0.56,42.56
+Afternoon,Cloudy,Local,474,4.56,73.59
+Evening Rush,Cloudy,Arterial,245,3.38,70.28
+Morning Rush,Cloudy,Highway,318,4.16,82.85
+Morning Rush,Cloudy,Local,98,4.41,74.75
+Afternoon,Cloudy,Highway,365,2.9,58.21
+Evening Rush,Clear,Arterial,179,2.64,55.12
+Evening Rush,Foggy,Arterial,493,2.21,85.55
+Afternoon,Cloudy,Local,54,1.65,21.31
+Evening Rush,Foggy,Arterial,477,2.23,90.45
+Evening Rush,Foggy,Highway,76,3.89,93.85
+Morning Rush,Clear,Arterial,209,3.05,67.67
+Evening Rush,Cloudy,Highway,198,4.47,86.21
+Evening Rush,Rainy,Highway,313,2.27,91.67
+Afternoon,Clear,Arterial,279,3.07,56.7
+Afternoon,Rainy,Local,249,3.19,65.82
+Night,Foggy,Intersection,99,3.0,94.51
+Morning Rush,Foggy,Arterial,116,3.54,86.38
+Evening Rush,Clear,Highway,349,1.26,64.13
+Evening Rush,Clear,Highway,430,2.61,80.28
+Night,Rainy,Arterial,107,0.61,47.45
+Evening Rush,Cloudy,Local,308,1.98,60.88
+Morning Rush,Rainy,Local,391,2.49,78.66
+Night,Clear,Highway,375,3.3,62.28
+Morning Rush,Rainy,Highway,179,4.76,100.0
+Night,Clear,Local,264,3.04,56.33
+Night,Rainy,Intersection,221,3.74,98.87
+Afternoon,Clear,Arterial,307,2.58,44.48
+Morning Rush,Clear,Highway,151,3.21,65.78
+Evening Rush,Clear,Highway,258,0.45,45.57
+Evening Rush,Cloudy,Local,340,1.35,51.51
+Morning Rush,Rainy,Arterial,403,1.87,76.6
+Evening Rush,Rainy,Local,335,2.42,78.69
+Evening Rush,Rainy,Arterial,165,0.32,57.51
+Morning Rush,Clear,Arterial,313,0.79,47.63
+Night,Rainy,Arterial,199,1.46,61.48
+Morning Rush,Rainy,Highway,349,4.86,100.0
+Night,Clear,Intersection,491,1.72,71.16
+Evening Rush,Foggy,Local,85,2.46,78.55
+Evening Rush,Clear,Intersection,382,1.06,60.42
+Evening Rush,Rainy,Local,336,3.09,78.25
+Afternoon,Clear,Arterial,352,1.48,33.94
+Night,Foggy,Highway,360,1.11,75.17
+Afternoon,Clear,Intersection,257,2.63,53.43
+Afternoon,Rainy,Highway,155,0.13,37.46
+Morning Rush,Foggy,Local,495,0.14,57.41
+Afternoon,Cloudy,Highway,207,1.17,36.54
+Morning Rush,Rainy,Highway,170,0.28,58.85
+Morning Rush,Foggy,Intersection,104,0.63,64.68
+Afternoon,Foggy,Arterial,449,1.76,63.7
+Night,Cloudy,Highway,61,4.03,67.9
+Night,Clear,Arterial,194,2.9,52.87
+Night,Clear,Local,449,2.61,51.66
+Night,Rainy,Highway,445,1.54,78.98
+Night,Cloudy,Intersection,185,4.67,82.0
+Afternoon,Clear,Local,52,2.05,33.12
+Afternoon,Cloudy,Local,193,0.53,26.0
+Evening Rush,Clear,Intersection,79,3.12,73.99
+Night,Foggy,Highway,286,0.66,57.55
+Afternoon,Clear,Highway,328,1.79,46.51
+Evening Rush,Cloudy,Local,397,2.59,66.52
+Night,Foggy,Highway,164,4.38,88.25
+Morning Rush,Foggy,Arterial,153,2.52,81.85
+Evening Rush,Foggy,Intersection,167,3.54,97.99
+Afternoon,Cloudy,Arterial,54,4.96,63.71
+Morning Rush,Rainy,Highway,409,0.74,63.69
+Morning Rush,Rainy,Local,297,1.45,64.89
+Morning Rush,Rainy,Intersection,413,2.03,79.19
+Evening Rush,Cloudy,Highway,370,2.17,74.59
+Afternoon,Foggy,Highway,170,2.11,73.12
+Morning Rush,Rainy,Local,335,4.55,96.59
+Night,Cloudy,Local,198,3.6,62.48
+Morning Rush,Rainy,Arterial,133,3.08,79.92
+Morning Rush,Clear,Intersection,455,1.62,59.65
+Evening Rush,Rainy,Intersection,280,4.14,100.0
+Evening Rush,Rainy,Local,337,4.78,98.98
+Afternoon,Foggy,Arterial,210,4.12,84.27
+Night,Cloudy,Intersection,321,0.11,42.28
+Evening Rush,Foggy,Local,87,3.22,83.14
+Morning Rush,Foggy,Highway,275,0.35,61.81
+Afternoon,Foggy,Intersection,191,1.36,66.57
+Morning Rush,Foggy,Arterial,341,0.39,56.36
+Morning Rush,Foggy,Arterial,200,3.06,89.42
+Evening Rush,Rainy,Arterial,163,3.46,89.47
+Afternoon,Foggy,Highway,286,0.66,56.58
+Night,Foggy,Intersection,115,1.98,72.05
+Night,Cloudy,Intersection,410,2.34,73.02
+Evening Rush,Clear,Highway,390,1.91,61.16
+Evening Rush,Rainy,Intersection,307,0.69,74.81
+Afternoon,Rainy,Highway,298,2.15,74.23
+Night,Rainy,Highway,498,3.78,93.66
+Night,Foggy,Highway,380,0.45,66.54
+Night,Foggy,Arterial,372,0.49,61.36
+Morning Rush,Foggy,Intersection,229,1.84,82.07
+Night,Cloudy,Highway,239,4.71,79.14
+Morning Rush,Clear,Intersection,456,3.38,88.11
+Afternoon,Foggy,Arterial,203,3.43,74.43
+Morning Rush,Clear,Highway,245,1.87,44.44
+Afternoon,Cloudy,Local,360,3.01,57.7
+Night,Rainy,Arterial,311,0.15,42.93
+Night,Foggy,Local,468,3.22,89.38
+Afternoon,Clear,Intersection,455,4.58,90.67
+Evening Rush,Clear,Intersection,476,3.1,88.19
+Afternoon,Foggy,Arterial,192,4.38,91.84
+Evening Rush,Rainy,Intersection,391,3.65,100.0
+Morning Rush,Rainy,Local,365,0.69,61.33
+Morning Rush,Rainy,Highway,150,4.52,97.85
+Morning Rush,Cloudy,Highway,293,0.43,54.19
+Night,Clear,Highway,61,2.72,58.41
+Morning Rush,Clear,Arterial,288,0.8,48.36
+Evening Rush,Clear,Intersection,98,0.16,38.06
+Morning Rush,Cloudy,Local,91,2.17,38.57
+Afternoon,Clear,Intersection,215,1.55,41.33
+Afternoon,Cloudy,Intersection,131,2.48,58.56
+Night,Rainy,Intersection,478,2.93,94.22
+Afternoon,Foggy,Highway,340,0.31,55.67
+Evening Rush,Clear,Local,207,0.7,38.08
+Morning Rush,Clear,Local,265,2.84,46.65
+Night,Rainy,Intersection,207,1.78,71.79
+Morning Rush,Foggy,Highway,183,3.67,99.61
+Morning Rush,Cloudy,Highway,116,3.3,70.39
+Evening Rush,Foggy,Local,385,4.24,100.0
+Afternoon,Rainy,Highway,56,3.49,80.13
+Afternoon,Rainy,Highway,485,2.21,76.17
+Morning Rush,Foggy,Highway,63,3.4,83.25
+Night,Cloudy,Arterial,122,1.45,45.33
+Afternoon,Cloudy,Intersection,448,1.6,64.78
+Night,Clear,Local,454,3.97,70.65
+Afternoon,Cloudy,Local,212,2.29,40.58
+Night,Foggy,Arterial,115,4.01,84.71
+Evening Rush,Rainy,Intersection,396,4.13,100.0
+Night,Clear,Local,179,4.3,65.72
+Evening Rush,Clear,Highway,468,4.59,100.0
+Evening Rush,Rainy,Local,255,2.21,65.74
+Night,Cloudy,Highway,325,1.66,58.94
+Evening Rush,Rainy,Arterial,305,2.95,88.72
+Morning Rush,Cloudy,Highway,315,1.92,56.69
+Evening Rush,Rainy,Local,74,3.05,67.43
+Afternoon,Foggy,Local,499,3.56,87.43
+Night,Cloudy,Local,330,3.47,60.91
+Morning Rush,Foggy,Arterial,302,1.94,85.58
+Night,Clear,Arterial,359,0.92,43.32
+Afternoon,Rainy,Intersection,338,2.21,77.99
+Afternoon,Clear,Local,213,0.8,24.14
+Afternoon,Clear,Highway,144,4.46,72.01
+Evening Rush,Clear,Arterial,319,1.79,59.89
+Evening Rush,Clear,Local,370,0.86,45.9
+Night,Rainy,Local,159,0.22,33.66
+Night,Clear,Arterial,385,3.26,78.31
+Morning Rush,Rainy,Intersection,359,3.22,91.04
+Morning Rush,Rainy,Arterial,287,1.77,67.62
+Night,Foggy,Arterial,430,0.45,53.43
+Evening Rush,Cloudy,Highway,485,2.11,78.19
+Afternoon,Cloudy,Highway,436,1.62,54.4
+Night,Rainy,Intersection,474,3.42,100.0
+Morning Rush,Foggy,Local,439,3.07,79.56
+Evening Rush,Rainy,Arterial,74,1.89,72.42
+Night,Rainy,Intersection,190,1.17,60.26
+Night,Rainy,Highway,166,4.94,95.29
+Evening Rush,Foggy,Arterial,441,2.32,95.5
+Night,Cloudy,Local,454,3.47,69.17
+Evening Rush,Foggy,Highway,74,0.79,67.52
+Afternoon,Clear,Highway,128,2.48,48.92
+Evening Rush,Foggy,Highway,117,0.23,64.12
+Evening Rush,Foggy,Intersection,222,2.58,92.97
+Evening Rush,Foggy,Local,493,4.82,100.0
+Night,Foggy,Arterial,61,1.98,63.3
+Night,Cloudy,Intersection,337,0.29,41.9
+Evening Rush,Clear,Intersection,177,0.25,49.56
+Night,Cloudy,Intersection,145,2.0,57.24
+Morning Rush,Cloudy,Highway,141,0.88,44.81
+Morning Rush,Foggy,Local,190,0.21,55.66
+Night,Rainy,Intersection,80,3.81,85.7
+Night,Rainy,Arterial,383,2.35,72.91
+Evening Rush,Cloudy,Local,69,1.52,40.54
+Afternoon,Cloudy,Arterial,195,4.51,69.62
+Night,Foggy,Local,365,0.67,57.84
+Morning Rush,Cloudy,Arterial,496,4.78,89.31
+Evening Rush,Foggy,Highway,439,1.64,88.07
+Night,Rainy,Intersection,209,4.45,94.56
+Morning Rush,Rainy,Arterial,398,3.05,82.9
+Morning Rush,Clear,Local,92,4.15,51.53
+Afternoon,Rainy,Intersection,303,4.92,100.0
+Evening Rush,Cloudy,Intersection,179,1.51,53.75
+Evening Rush,Rainy,Local,109,4.81,90.15
+Afternoon,Foggy,Arterial,200,2.01,60.04
+Afternoon,Rainy,Highway,336,1.99,73.6
+Evening Rush,Clear,Highway,54,1.77,44.79
+Evening Rush,Rainy,Arterial,467,2.75,87.37
+Night,Foggy,Intersection,315,0.86,69.29
+Night,Foggy,Intersection,394,2.81,90.96
+Afternoon,Cloudy,Intersection,179,2.75,66.51
+Night,Rainy,Intersection,431,3.83,94.85
+Morning Rush,Foggy,Arterial,316,4.18,97.54
+Night,Clear,Intersection,227,2.26,58.34
+Night,Cloudy,Local,302,1.58,47.29
+Morning Rush,Clear,Intersection,464,1.37,60.36
+Afternoon,Rainy,Highway,105,1.05,40.11
+Morning Rush,Rainy,Intersection,132,0.38,58.33
+Night,Rainy,Arterial,442,1.78,77.24
+Afternoon,Cloudy,Highway,148,1.42,41.53
+Night,Foggy,Arterial,198,4.84,97.5
+Morning Rush,Cloudy,Arterial,378,2.83,63.1
+Morning Rush,Clear,Highway,205,1.8,45.37
+Night,Cloudy,Arterial,239,2.94,59.05
+Evening Rush,Clear,Arterial,420,0.78,42.47
+Evening Rush,Cloudy,Intersection,312,2.28,79.19
+Morning Rush,Foggy,Local,129,3.17,72.63
+Morning Rush,Clear,Arterial,449,2.5,62.84
+Evening Rush,Rainy,Arterial,301,2.07,68.31
+Evening Rush,Rainy,Arterial,146,4.97,98.57
+Night,Cloudy,Intersection,309,4.41,80.53
+Night,Rainy,Local,309,3.15,62.25
+Evening Rush,Clear,Highway,152,2.89,67.69
+Night,Rainy,Intersection,89,3.14,88.17
+Night,Foggy,Intersection,322,1.09,79.43
+Afternoon,Foggy,Local,150,2.04,59.81
+Night,Cloudy,Local,408,0.29,32.15
+Morning Rush,Clear,Intersection,429,2.43,75.49
+Night,Foggy,Highway,357,2.76,93.0
+Night,Foggy,Intersection,270,1.22,73.68
+Evening Rush,Clear,Local,357,4.82,76.56
+Morning Rush,Rainy,Highway,469,4.56,100.0
+Night,Rainy,Local,173,3.64,81.83
+Night,Cloudy,Highway,471,2.71,70.57
+Afternoon,Rainy,Arterial,280,4.36,68.18
+Night,Clear,Local,227,0.74,19.14
+Night,Foggy,Local,112,3.97,77.06
+Afternoon,Rainy,Intersection,165,0.71,58.88
+Evening Rush,Cloudy,Local,240,3.99,73.13
+Night,Rainy,Local,111,1.45,54.21
+Afternoon,Clear,Arterial,305,4.4,63.57
+Morning Rush,Cloudy,Local,56,4.73,59.72
+Evening Rush,Rainy,Arterial,204,0.83,59.0
+Morning Rush,Cloudy,Arterial,141,2.37,56.06
+Morning Rush,Clear,Arterial,63,4.91,72.93
+Afternoon,Foggy,Arterial,278,2.47,64.54
+Night,Clear,Highway,135,4.33,66.94
+Afternoon,Clear,Intersection,182,2.98,70.5
+Afternoon,Clear,Highway,232,1.94,37.51
+Afternoon,Clear,Local,435,1.5,40.7
+Afternoon,Foggy,Highway,111,1.1,44.96
+Evening Rush,Foggy,Highway,268,3.83,100.0
+Night,Cloudy,Local,454,1.99,48.6
+Morning Rush,Rainy,Local,295,2.61,74.91
+Morning Rush,Foggy,Local,279,2.51,69.8
+Night,Foggy,Highway,128,2.93,80.87
+Morning Rush,Rainy,Highway,198,4.34,91.78
+Night,Foggy,Local,187,4.91,88.0
+Morning Rush,Clear,Intersection,363,2.1,67.73
+Afternoon,Clear,Intersection,425,4.15,76.35
+Morning Rush,Rainy,Arterial,472,3.85,99.28
+Night,Cloudy,Local,438,2.91,60.67
+Night,Cloudy,Arterial,114,4.78,72.7
+Night,Rainy,Intersection,62,1.08,60.51
+Night,Rainy,Arterial,262,0.64,50.13
+Night,Clear,Local,291,4.28,59.46
+Evening Rush,Cloudy,Local,262,2.25,55.32
+Evening Rush,Foggy,Local,230,4.25,100.0
+Morning Rush,Clear,Highway,387,4.48,85.86
+Night,Rainy,Arterial,222,0.41,43.76
+Morning Rush,Cloudy,Intersection,209,4.43,89.67
+Night,Foggy,Intersection,213,2.3,83.86
+Night,Foggy,Intersection,237,2.6,88.08
+Evening Rush,Clear,Highway,444,3.17,74.57
+Evening Rush,Cloudy,Highway,240,4.64,87.59
+Afternoon,Cloudy,Local,454,0.19,26.68
+Evening Rush,Rainy,Intersection,357,2.44,91.88
+Afternoon,Cloudy,Highway,305,3.47,69.59
+Afternoon,Cloudy,Local,232,3.64,57.16
+Afternoon,Clear,Intersection,166,3.49,63.42
+Afternoon,Cloudy,Arterial,331,0.76,42.61
+Afternoon,Foggy,Local,245,1.57,58.94
+Morning Rush,Clear,Highway,83,1.86,46.21
+Evening Rush,Clear,Highway,101,4.04,68.52
+Afternoon,Rainy,Local,161,1.47,42.57
+Night,Cloudy,Local,301,1.13,37.03
+Evening Rush,Rainy,Highway,131,4.79,100.0
+Evening Rush,Foggy,Arterial,281,0.14,62.5
+Afternoon,Clear,Intersection,276,4.99,77.66
+Morning Rush,Clear,Arterial,282,3.42,61.82
+Afternoon,Clear,Local,270,4.16,57.05
+Morning Rush,Foggy,Arterial,485,1.54,84.25
+Night,Foggy,Highway,462,0.17,73.14
+Evening Rush,Rainy,Local,471,3.72,95.01
+Night,Rainy,Intersection,91,4.19,90.32
+Morning Rush,Rainy,Highway,70,3.73,79.03
+Morning Rush,Cloudy,Highway,91,0.8,51.34
+Night,Clear,Intersection,446,3.79,73.73
+Morning Rush,Clear,Intersection,162,3.87,81.04
+Night,Rainy,Arterial,154,3.33,72.63
+Evening Rush,Clear,Local,241,3.85,65.14
+Night,Rainy,Intersection,66,4.25,84.59
+Evening Rush,Cloudy,Intersection,169,3.11,89.91
+Night,Cloudy,Local,442,0.53,39.09
+Morning Rush,Foggy,Intersection,474,2.49,98.97
+Night,Cloudy,Intersection,178,0.48,46.35
+Morning Rush,Rainy,Arterial,179,2.1,64.91
+Night,Cloudy,Highway,109,2.09,50.27
+Night,Foggy,Highway,97,0.42,53.36
+Afternoon,Clear,Highway,78,1.81,33.66
+Morning Rush,Rainy,Highway,146,0.64,63.24
+Afternoon,Clear,Intersection,59,4.06,61.87
+Morning Rush,Foggy,Local,291,4.74,91.27
+Afternoon,Foggy,Local,363,0.45,47.51
+Evening Rush,Foggy,Arterial,493,4.78,100.0
+Night,Clear,Arterial,281,2.66,48.37
+Morning Rush,Clear,Intersection,326,1.57,54.67
+Morning Rush,Clear,Local,333,0.48,30.39
+Night,Clear,Local,252,2.55,51.69
+Morning Rush,Foggy,Highway,296,3.99,99.3
+Morning Rush,Foggy,Intersection,339,3.56,100.0
+Afternoon,Rainy,Intersection,313,0.35,52.95
+Morning Rush,Rainy,Highway,492,0.46,70.91
+Evening Rush,Clear,Intersection,263,2.07,63.99
+Evening Rush,Cloudy,Intersection,249,1.55,69.23
+Night,Cloudy,Arterial,482,1.24,46.09
+Morning Rush,Foggy,Local,128,1.48,63.63
+Night,Foggy,Intersection,450,4.04,100.0
+Evening Rush,Foggy,Arterial,493,4.65,100.0
+Morning Rush,Rainy,Local,392,2.09,70.75
+Morning Rush,Rainy,Highway,393,4.54,100.0
+Night,Foggy,Arterial,222,1.68,66.37
+Evening Rush,Foggy,Arterial,118,2.43,75.51
+Morning Rush,Foggy,Local,465,1.21,64.68
+Night,Cloudy,Highway,477,3.24,79.01
+Evening Rush,Rainy,Arterial,498,4.9,100.0
+Night,Cloudy,Intersection,136,3.06,69.52
+Afternoon,Cloudy,Intersection,150,1.85,42.19
+Morning Rush,Foggy,Intersection,57,3.27,84.12
+Afternoon,Foggy,Highway,382,0.7,68.01
+Evening Rush,Clear,Arterial,249,4.45,81.12
+Afternoon,Clear,Intersection,136,2.57,53.81
+Afternoon,Cloudy,Highway,92,2.3,41.87
+Evening Rush,Rainy,Intersection,434,2.97,97.16
+Night,Foggy,Local,158,3.16,77.88
+Afternoon,Foggy,Arterial,484,0.45,64.05
+Night,Cloudy,Arterial,457,3.44,67.24
+Afternoon,Clear,Highway,201,1.29,29.54
+Night,Rainy,Highway,66,3.6,78.1
+Evening Rush,Clear,Arterial,182,4.13,69.58
+Afternoon,Clear,Intersection,197,4.04,64.18
+Evening Rush,Clear,Intersection,326,2.81,69.88
+Afternoon,Clear,Local,281,2.65,40.4
+Evening Rush,Foggy,Intersection,363,0.8,76.75
+Evening Rush,Foggy,Highway,464,3.9,100.0
+Afternoon,Clear,Highway,415,1.43,47.39
+Afternoon,Rainy,Intersection,277,2.53,76.1
+Afternoon,Cloudy,Highway,188,1.49,44.84
+Morning Rush,Rainy,Arterial,485,0.76,58.75
+Night,Rainy,Arterial,448,3.18,84.77
+Morning Rush,Rainy,Intersection,260,0.37,74.48
+Morning Rush,Clear,Arterial,440,3.77,73.44
+Evening Rush,Foggy,Arterial,77,1.66,73.8
+Afternoon,Rainy,Local,100,0.1,34.08
+Night,Clear,Local,491,2.6,59.97
+Evening Rush,Rainy,Arterial,310,0.33,61.53
+Morning Rush,Rainy,Intersection,310,1.45,79.73
+Afternoon,Clear,Local,399,3.56,60.06
+Evening Rush,Foggy,Highway,401,0.41,78.32
+Afternoon,Foggy,Highway,57,4.21,78.79
+Evening Rush,Cloudy,Highway,369,0.12,42.42
+Afternoon,Clear,Intersection,187,1.31,32.81
+Morning Rush,Cloudy,Arterial,87,3.73,64.43
+Night,Cloudy,Highway,160,1.65,50.87
+Morning Rush,Cloudy,Intersection,417,0.6,52.16
+Night,Foggy,Local,269,1.87,69.08
+Afternoon,Clear,Arterial,386,1.42,37.13
+Evening Rush,Cloudy,Local,272,4.23,75.72
+Morning Rush,Clear,Intersection,185,1.64,49.62
+Night,Clear,Highway,305,3.97,62.48
+Morning Rush,Foggy,Highway,409,4.47,100.0
+Night,Cloudy,Intersection,458,2.23,79.18
+Morning Rush,Cloudy,Highway,378,4.56,90.41
+Night,Clear,Arterial,499,1.95,45.21
+Night,Rainy,Intersection,483,4.82,100.0
+Afternoon,Foggy,Local,98,0.54,31.2
+Night,Foggy,Intersection,341,3.47,92.29
+Afternoon,Foggy,Arterial,431,2.52,76.25
+Night,Foggy,Arterial,373,2.0,75.53
+Evening Rush,Cloudy,Intersection,127,3.2,72.04
+Evening Rush,Cloudy,Intersection,154,3.55,80.27
+Evening Rush,Rainy,Highway,218,0.12,63.5
+Night,Foggy,Arterial,266,0.92,64.1
+Afternoon,Foggy,Intersection,427,3.59,100.0
+Afternoon,Clear,Intersection,168,3.37,69.97
+Night,Cloudy,Arterial,239,4.83,81.91
+Evening Rush,Foggy,Intersection,304,3.83,100.0
+Evening Rush,Rainy,Highway,419,4.76,100.0
+Afternoon,Rainy,Arterial,315,3.54,80.33
+Evening Rush,Cloudy,Highway,198,1.56,61.05
+Morning Rush,Rainy,Highway,213,0.62,60.61
+Afternoon,Rainy,Highway,189,3.93,77.3
+Evening Rush,Cloudy,Highway,396,3.26,78.3
+Afternoon,Foggy,Arterial,307,0.34,50.19
+Morning Rush,Foggy,Highway,423,1.86,86.26
+Afternoon,Rainy,Highway,318,4.79,92.22
+Afternoon,Rainy,Intersection,230,2.55,76.82
+Afternoon,Foggy,Arterial,209,2.22,75.96
+Afternoon,Cloudy,Arterial,400,2.34,45.68
+Morning Rush,Rainy,Local,449,1.12,67.07
+Night,Clear,Arterial,337,1.91,47.25
+Afternoon,Cloudy,Arterial,337,1.91,49.83
+Afternoon,Rainy,Local,429,0.36,43.61
+Evening Rush,Rainy,Arterial,275,3.86,93.87
+Afternoon,Clear,Arterial,60,2.14,34.45
+Evening Rush,Clear,Arterial,59,4.13,67.15
+Night,Foggy,Arterial,320,4.27,87.9
+Morning Rush,Cloudy,Local,322,1.14,43.11
+Morning Rush,Cloudy,Arterial,473,3.32,70.04
+Night,Foggy,Arterial,451,2.41,85.41
+Morning Rush,Cloudy,Local,232,4.41,64.05
+Night,Cloudy,Intersection,202,1.16,54.82
+Night,Cloudy,Highway,364,3.42,75.91
+Night,Cloudy,Intersection,383,3.08,78.29
+Morning Rush,Cloudy,Local,173,1.55,31.6
+Evening Rush,Clear,Highway,163,0.77,42.58
+Night,Cloudy,Local,327,3.29,66.75
+Afternoon,Clear,Local,463,3.72,58.13
+Morning Rush,Cloudy,Arterial,262,1.65,46.59
+Night,Foggy,Highway,221,3.26,83.26
+Night,Rainy,Arterial,337,2.04,68.54
+Afternoon,Clear,Highway,484,3.59,66.0
+Evening Rush,Cloudy,Local,223,1.08,50.89
+Evening Rush,Foggy,Local,162,4.46,95.76
+Evening Rush,Rainy,Intersection,425,1.51,84.32
+Night,Clear,Highway,454,1.9,50.65
+Night,Rainy,Arterial,171,0.38,48.06
+Night,Foggy,Intersection,81,0.65,62.05
+Morning Rush,Clear,Intersection,271,2.63,63.18
+Afternoon,Rainy,Intersection,168,1.41,49.64
+Night,Cloudy,Arterial,88,4.19,67.47
+Afternoon,Clear,Intersection,317,0.17,33.45
+Afternoon,Rainy,Arterial,282,1.96,62.56
+Evening Rush,Foggy,Intersection,480,1.75,100.0
+Morning Rush,Foggy,Arterial,67,0.19,49.45
+Night,Clear,Local,198,0.71,22.45
+Evening Rush,Rainy,Local,446,2.13,73.4
+Evening Rush,Clear,Local,198,2.52,51.56
+Night,Clear,Local,175,2.08,38.6
+Afternoon,Rainy,Local,441,2.7,69.91
+Evening Rush,Rainy,Intersection,351,3.02,100.0
+Afternoon,Cloudy,Intersection,409,0.15,45.36
+Morning Rush,Rainy,Intersection,287,2.37,84.51
+Afternoon,Foggy,Arterial,184,4.82,87.03
+Morning Rush,Clear,Arterial,200,2.64,55.73
+Afternoon,Clear,Arterial,285,3.42,51.06
+Evening Rush,Foggy,Arterial,273,1.63,78.12
+Evening Rush,Rainy,Local,252,3.89,91.42
+Morning Rush,Foggy,Local,305,3.89,90.02
+Night,Foggy,Local,135,2.65,63.75
+Morning Rush,Cloudy,Highway,199,4.88,75.83
+Morning Rush,Foggy,Intersection,284,0.72,79.28
+Afternoon,Clear,Arterial,394,0.18,29.58
+Afternoon,Foggy,Arterial,71,3.87,78.68
+Morning Rush,Clear,Local,397,4.06,63.67
+Evening Rush,Clear,Arterial,334,0.69,52.16
+Afternoon,Clear,Arterial,318,1.4,34.39
+Night,Rainy,Intersection,307,0.19,57.74
+Afternoon,Cloudy,Local,78,1.54,23.17
+Afternoon,Clear,Intersection,262,3.89,60.45
+Night,Clear,Highway,485,2.64,71.59
+Morning Rush,Rainy,Highway,332,1.81,82.81
+Night,Clear,Highway,99,1.92,42.33
+Morning Rush,Foggy,Local,144,0.11,43.46
+Morning Rush,Foggy,Arterial,456,1.57,77.05
+Morning Rush,Cloudy,Local,137,3.27,56.43
+Night,Clear,Local,93,4.87,56.42
+Morning Rush,Rainy,Arterial,327,4.25,94.12
+Evening Rush,Foggy,Intersection,220,0.22,71.77
+Night,Rainy,Highway,470,4.5,100.0
+Evening Rush,Rainy,Intersection,238,3.94,100.0
+Morning Rush,Foggy,Highway,402,3.92,97.4
+Afternoon,Rainy,Local,233,2.34,59.49
+Morning Rush,Foggy,Highway,52,2.05,71.3
+Evening Rush,Rainy,Local,240,1.58,72.25
+Evening Rush,Foggy,Intersection,167,0.42,78.03
+Night,Clear,Local,68,1.22,32.24
+Afternoon,Cloudy,Intersection,72,1.31,38.17
+Night,Foggy,Arterial,462,2.47,93.13
+Evening Rush,Foggy,Arterial,79,3.76,92.51
+Morning Rush,Cloudy,Arterial,344,2.42,71.09
+Afternoon,Foggy,Local,157,0.38,37.57
+Morning Rush,Foggy,Arterial,416,4.79,100.0
+Morning Rush,Rainy,Highway,330,4.72,100.0
+Afternoon,Cloudy,Intersection,177,3.95,72.34
+Night,Clear,Intersection,278,4.96,91.99
+Morning Rush,Foggy,Highway,160,2.77,82.94
+Evening Rush,Cloudy,Local,185,4.82,86.42
+Morning Rush,Rainy,Local,411,0.47,59.8
+Afternoon,Clear,Intersection,235,1.89,47.23
+Afternoon,Cloudy,Arterial,193,1.2,37.99
+Afternoon,Clear,Local,121,1.06,18.07
+Night,Clear,Local,178,0.79,36.77
+Morning Rush,Clear,Highway,413,3.15,59.7
+Night,Foggy,Highway,310,3.93,100.0
+Night,Foggy,Arterial,52,2.93,62.56
+Afternoon,Rainy,Local,498,0.82,51.99
+Afternoon,Rainy,Local,437,4.07,82.75
+Night,Cloudy,Highway,153,3.22,70.86
+Morning Rush,Rainy,Local,273,2.0,62.46
+Evening Rush,Clear,Intersection,369,3.4,90.3
+Night,Clear,Highway,411,1.37,44.25
+Morning Rush,Foggy,Arterial,403,1.79,85.75
+Afternoon,Clear,Highway,59,4.6,60.99
+Afternoon,Cloudy,Local,454,1.52,43.73
+Morning Rush,Clear,Arterial,433,2.4,59.64
+Evening Rush,Clear,Highway,351,4.46,95.05
+Afternoon,Cloudy,Intersection,280,3.57,77.34
+Afternoon,Rainy,Intersection,268,0.4,56.94
+Afternoon,Rainy,Highway,460,0.82,55.84
+Morning Rush,Cloudy,Intersection,115,0.14,37.42
+Night,Foggy,Intersection,474,3.19,95.72
+Afternoon,Clear,Intersection,161,2.29,38.1
+Night,Cloudy,Arterial,62,0.76,36.39
+Evening Rush,Clear,Intersection,442,4.79,98.94
+Afternoon,Foggy,Intersection,469,2.7,89.07
+Afternoon,Clear,Intersection,135,1.29,45.78
+Evening Rush,Cloudy,Arterial,283,2.55,64.44
+Afternoon,Clear,Highway,139,3.43,50.66
+Night,Rainy,Local,363,0.47,48.1
+Morning Rush,Foggy,Intersection,103,1.45,67.96
+Night,Foggy,Highway,61,4.05,89.66
+Morning Rush,Foggy,Intersection,258,2.35,86.95
+Morning Rush,Cloudy,Arterial,63,2.78,52.78
+Night,Foggy,Highway,170,2.22,71.03
+Night,Rainy,Arterial,467,0.32,56.35
+Night,Cloudy,Intersection,486,0.91,58.96
+Night,Rainy,Intersection,426,2.28,82.24
+Evening Rush,Clear,Arterial,69,1.13,37.27
+Afternoon,Clear,Local,124,0.34,12.95
+Morning Rush,Clear,Arterial,449,4.23,79.35
+Night,Clear,Intersection,292,4.91,85.94
+Night,Rainy,Arterial,272,3.99,82.4
+Night,Cloudy,Local,119,4.28,67.58
+Evening Rush,Cloudy,Arterial,361,1.29,57.82
+Night,Foggy,Local,260,4.81,90.98
+Night,Rainy,Local,150,1.06,48.32
+Night,Clear,Arterial,235,4.76,71.63
+Afternoon,Rainy,Arterial,181,4.97,78.27
+Evening Rush,Foggy,Highway,160,3.59,99.0
+Night,Foggy,Intersection,430,4.91,100.0
+Morning Rush,Rainy,Local,181,2.89,75.81
+Morning Rush,Rainy,Highway,69,1.37,60.25
+Morning Rush,Rainy,Arterial,443,2.24,84.02
+Evening Rush,Cloudy,Intersection,73,3.01,69.87
+Evening Rush,Clear,Highway,276,0.46,45.99
+Morning Rush,Rainy,Local,203,3.15,80.67
+Night,Rainy,Highway,342,4.91,100.0
+Evening Rush,Rainy,Local,279,1.03,58.51
+Morning Rush,Foggy,Arterial,359,3.98,100.0
+Morning Rush,Foggy,Intersection,408,4.55,100.0
+Night,Cloudy,Intersection,454,4.72,92.62
+Afternoon,Clear,Intersection,251,4.8,68.11
+Evening Rush,Cloudy,Arterial,87,2.66,57.03
+Night,Clear,Local,479,4.89,81.45
+Morning Rush,Foggy,Arterial,309,3.81,91.58
+Morning Rush,Foggy,Intersection,237,0.89,73.33
+Night,Foggy,Arterial,106,2.44,65.35
+Evening Rush,Cloudy,Arterial,478,3.62,75.66
+Afternoon,Rainy,Arterial,69,1.31,42.48
+Afternoon,Rainy,Local,322,3.24,73.65
+Morning Rush,Foggy,Highway,168,3.37,78.57
+Evening Rush,Rainy,Highway,120,0.9,65.06
+Afternoon,Rainy,Arterial,53,2.87,54.89
+Evening Rush,Cloudy,Highway,270,3.88,87.64
+Evening Rush,Clear,Highway,63,2.54,61.49
+Morning Rush,Foggy,Arterial,52,0.16,47.82
+Afternoon,Foggy,Arterial,265,0.14,46.15
+Night,Cloudy,Intersection,278,1.85,55.59
+Morning Rush,Cloudy,Highway,385,4.64,85.07
+Afternoon,Rainy,Local,235,1.22,55.09
+Afternoon,Foggy,Arterial,104,3.21,66.93
+Afternoon,Clear,Intersection,437,1.19,57.22
+Afternoon,Cloudy,Local,425,1.68,39.5
+Afternoon,Clear,Highway,303,4.26,72.35
+Evening Rush,Clear,Intersection,73,3.67,68.93
+Morning Rush,Foggy,Arterial,211,0.57,61.76
+Evening Rush,Foggy,Local,207,2.2,73.65
+Night,Cloudy,Arterial,131,0.24,26.08
+Afternoon,Foggy,Highway,452,2.46,85.73
+Morning Rush,Foggy,Local,208,3.35,79.47
+Afternoon,Foggy,Highway,237,0.68,49.14
+Morning Rush,Clear,Highway,109,1.52,48.37
+Evening Rush,Cloudy,Intersection,452,2.05,72.85
+Morning Rush,Rainy,Arterial,354,4.61,100.0
+Night,Clear,Local,368,4.97,79.28
+Night,Foggy,Highway,415,0.32,62.92
+Morning Rush,Clear,Highway,260,3.83,79.61
+Morning Rush,Foggy,Local,455,1.92,79.81
+Morning Rush,Foggy,Highway,201,2.02,74.76
+Morning Rush,Clear,Intersection,158,3.8,81.33
+Night,Cloudy,Intersection,125,4.6,75.29
+Afternoon,Foggy,Intersection,79,4.76,93.88
+Morning Rush,Cloudy,Intersection,363,2.93,77.79
+Morning Rush,Rainy,Highway,166,1.85,73.17
+Night,Foggy,Local,464,3.96,98.74
+Night,Cloudy,Local,405,1.33,49.76
+Evening Rush,Cloudy,Local,241,2.86,64.36
+Morning Rush,Rainy,Local,68,1.86,54.92
+Evening Rush,Cloudy,Arterial,481,3.32,73.31
+Night,Cloudy,Local,222,1.28,30.11
+Night,Rainy,Arterial,277,1.04,65.31
+Afternoon,Foggy,Arterial,399,4.6,87.78
+Morning Rush,Cloudy,Intersection,232,0.6,46.36
+Evening Rush,Cloudy,Arterial,162,2.58,68.0
+Night,Cloudy,Highway,232,1.18,47.13
+Night,Clear,Arterial,195,0.29,30.34
+Evening Rush,Rainy,Intersection,368,0.28,75.23
+Afternoon,Clear,Arterial,165,0.96,33.55
+Night,Rainy,Highway,162,4.35,91.46
+Morning Rush,Foggy,Highway,300,1.48,80.12
+Night,Foggy,Highway,300,4.76,100.0
+Morning Rush,Cloudy,Intersection,352,2.95,81.51
+Evening Rush,Rainy,Intersection,362,2.24,89.9
+Morning Rush,Foggy,Local,167,2.94,73.81
+Evening Rush,Rainy,Intersection,350,2.63,99.77
+Morning Rush,Foggy,Highway,210,3.82,100.0
+Evening Rush,Clear,Highway,450,1.48,71.24
+Morning Rush,Foggy,Intersection,247,1.83,91.3
+Afternoon,Clear,Arterial,309,4.48,71.75
+Morning Rush,Foggy,Intersection,197,4.74,100.0
+Morning Rush,Cloudy,Intersection,289,4.47,100.0
+Afternoon,Clear,Highway,96,2.16,45.03
+Night,Foggy,Local,448,3.92,88.29
+Night,Cloudy,Highway,247,2.43,62.82
+Morning Rush,Clear,Local,96,2.54,39.05
+Afternoon,Cloudy,Highway,127,1.1,39.17
+Morning Rush,Rainy,Intersection,173,3.0,80.34
+Evening Rush,Rainy,Highway,124,1.01,61.02
+Evening Rush,Clear,Highway,408,1.72,67.07
+Morning Rush,Foggy,Highway,186,4.29,100.0
+Night,Clear,Intersection,139,1.11,43.29
+Night,Cloudy,Intersection,449,0.45,51.03
+Morning Rush,Foggy,Intersection,374,0.44,63.79
+Morning Rush,Rainy,Intersection,110,4.71,100.0
+Evening Rush,Foggy,Local,187,2.58,80.95
+Night,Rainy,Local,99,2.11,53.48
+Morning Rush,Foggy,Arterial,308,4.07,97.91
+Evening Rush,Foggy,Intersection,156,4.2,100.0
+Night,Foggy,Local,162,1.73,57.17
+Afternoon,Cloudy,Highway,399,3.5,71.34
+Evening Rush,Cloudy,Intersection,303,3.88,89.56
+Night,Clear,Arterial,167,3.31,62.0
+Night,Clear,Arterial,247,0.84,22.25
+Evening Rush,Rainy,Arterial,386,4.39,100.0
+Afternoon,Cloudy,Highway,414,2.74,59.61
+Evening Rush,Rainy,Local,100,1.48,59.9
+Night,Clear,Highway,294,2.18,53.95
+Morning Rush,Rainy,Intersection,452,0.28,78.99
+Morning Rush,Clear,Arterial,475,0.73,56.06
+Evening Rush,Cloudy,Highway,84,3.85,72.99
+Night,Foggy,Highway,351,0.1,60.04
+Morning Rush,Cloudy,Local,459,2.14,60.74
+Night,Rainy,Local,118,2.66,57.33
+Evening Rush,Rainy,Arterial,398,0.37,67.76
+Morning Rush,Cloudy,Highway,369,4.87,92.26
+Night,Cloudy,Highway,470,1.21,50.56
+Morning Rush,Clear,Local,98,1.59,33.42
+Evening Rush,Rainy,Highway,454,1.59,79.07
+Night,Rainy,Highway,123,1.23,62.4
+Morning Rush,Cloudy,Highway,241,0.11,50.25
+Evening Rush,Foggy,Local,310,3.67,95.32
+Morning Rush,Rainy,Arterial,405,4.84,100.0
+Morning Rush,Foggy,Intersection,119,1.2,72.52
+Afternoon,Cloudy,Arterial,139,3.35,59.97
+Afternoon,Cloudy,Intersection,309,3.74,80.56
+Evening Rush,Clear,Highway,175,4.26,79.02
+Afternoon,Rainy,Arterial,280,2.17,64.16
+Evening Rush,Foggy,Intersection,344,1.58,92.82
+Afternoon,Clear,Local,468,1.69,34.93
+Morning Rush,Rainy,Local,178,3.59,84.08
+Evening Rush,Clear,Arterial,329,4.1,87.83
+Evening Rush,Cloudy,Arterial,362,0.99,60.21
+Morning Rush,Rainy,Highway,149,1.92,63.93
+Evening Rush,Clear,Arterial,375,4.52,75.35
+Evening Rush,Clear,Highway,346,4.05,87.88
+Afternoon,Foggy,Highway,231,4.93,94.74
+Evening Rush,Clear,Local,223,3.8,68.36
+Night,Rainy,Local,365,2.03,72.58
+Morning Rush,Rainy,Intersection,413,2.99,93.14
+Afternoon,Foggy,Local,237,3.34,70.99
+Afternoon,Rainy,Local,106,0.48,35.42
+Night,Cloudy,Arterial,80,2.77,44.41
+Morning Rush,Rainy,Local,133,3.58,72.33
+Morning Rush,Rainy,Intersection,201,0.92,67.36
+Afternoon,Clear,Arterial,85,3.93,51.2
+Evening Rush,Clear,Intersection,262,2.96,78.12
+Afternoon,Rainy,Local,463,4.77,100.0
+Morning Rush,Foggy,Intersection,457,0.31,76.88
+Night,Clear,Arterial,413,1.4,41.31
+Afternoon,Foggy,Highway,155,3.05,83.79
+Morning Rush,Rainy,Intersection,463,1.55,76.08
+Afternoon,Rainy,Intersection,391,3.6,84.7
+Evening Rush,Cloudy,Arterial,269,3.82,75.98
+Afternoon,Clear,Arterial,440,0.6,32.19
+Afternoon,Rainy,Intersection,212,2.62,71.58
+Morning Rush,Cloudy,Local,488,2.59,65.26
+Morning Rush,Clear,Intersection,269,1.91,61.23
+Morning Rush,Rainy,Arterial,319,4.67,100.0
+Afternoon,Rainy,Highway,169,4.15,83.72
+Evening Rush,Clear,Highway,443,3.52,80.11
+Night,Clear,Local,385,3.6,66.47
+Night,Clear,Intersection,449,2.36,62.47
+Morning Rush,Rainy,Highway,231,4.61,92.18
+Morning Rush,Rainy,Intersection,155,3.5,97.23
+Afternoon,Cloudy,Arterial,266,3.67,68.05
+Night,Foggy,Highway,254,4.32,94.4
+Morning Rush,Clear,Local,119,1.44,32.16
+Evening Rush,Rainy,Arterial,93,4.05,84.64
+Evening Rush,Rainy,Local,378,1.06,67.35
+Morning Rush,Clear,Arterial,350,1.79,60.56
+Morning Rush,Foggy,Highway,277,1.74,81.99
+Night,Clear,Local,233,4.89,73.4
+Night,Foggy,Local,156,4.3,88.34
+Afternoon,Rainy,Arterial,133,3.54,70.72
+Night,Foggy,Local,387,3.66,92.5
+Evening Rush,Cloudy,Arterial,299,2.85,74.19
+Evening Rush,Rainy,Arterial,412,4.74,100.0
+Morning Rush,Cloudy,Arterial,490,2.53,67.6
+Night,Clear,Arterial,70,1.96,28.71
+Afternoon,Clear,Highway,245,0.9,39.03
+Evening Rush,Clear,Arterial,227,3.95,75.33
+Evening Rush,Foggy,Intersection,466,3.7,100.0
+Afternoon,Rainy,Local,56,1.98,45.84
+Afternoon,Clear,Intersection,119,0.22,39.73
+Evening Rush,Clear,Highway,176,4.21,75.93
+Evening Rush,Rainy,Intersection,448,0.16,70.25
+Afternoon,Clear,Local,209,3.55,49.29
+Evening Rush,Cloudy,Intersection,297,4.85,100.0
+Morning Rush,Rainy,Highway,252,2.24,88.87
+Morning Rush,Rainy,Arterial,197,1.25,63.67
+Afternoon,Rainy,Intersection,192,3.55,76.83
+Night,Cloudy,Highway,481,4.1,95.09
+Afternoon,Rainy,Highway,248,2.78,72.62
+Afternoon,Cloudy,Local,454,4.84,72.37
+Night,Rainy,Local,475,0.35,47.1
+Night,Foggy,Intersection,203,2.57,88.0
+Night,Clear,Arterial,425,3.62,69.39
+Morning Rush,Foggy,Highway,433,4.33,100.0
+Evening Rush,Clear,Intersection,191,0.98,58.87
+Morning Rush,Cloudy,Highway,362,4.02,80.67
+Evening Rush,Foggy,Highway,214,2.81,98.49
+Morning Rush,Rainy,Arterial,363,2.04,72.32
+Evening Rush,Clear,Arterial,70,0.75,46.12
+Morning Rush,Clear,Intersection,131,4.34,81.63
+Night,Foggy,Arterial,118,0.87,48.82
+Afternoon,Cloudy,Arterial,180,1.62,28.27
+Morning Rush,Foggy,Intersection,136,1.52,79.68
+Evening Rush,Cloudy,Arterial,267,4.37,82.51
+Night,Cloudy,Local,470,3.4,67.02
+Morning Rush,Clear,Highway,354,4.0,82.99
+Morning Rush,Foggy,Highway,452,1.33,86.43
+Night,Foggy,Highway,420,3.16,99.52
+Morning Rush,Cloudy,Highway,394,2.9,68.89
+Afternoon,Foggy,Intersection,390,4.18,100.0
+Morning Rush,Rainy,Highway,433,4.54,100.0
+Afternoon,Rainy,Highway,445,0.16,43.12
+Afternoon,Foggy,Highway,494,3.4,87.87
+Night,Foggy,Highway,474,0.35,68.55
+Morning Rush,Cloudy,Local,210,2.79,51.41
+Night,Rainy,Highway,227,1.51,63.74
+Morning Rush,Rainy,Local,166,1.6,59.33
+Morning Rush,Clear,Intersection,245,1.83,57.19
+Evening Rush,Cloudy,Arterial,432,3.14,76.21
+Morning Rush,Clear,Highway,376,1.74,51.19
+Night,Rainy,Arterial,135,3.69,77.41
+Afternoon,Cloudy,Arterial,338,2.08,39.0
+Morning Rush,Foggy,Intersection,130,0.43,61.07
+Evening Rush,Cloudy,Arterial,201,3.94,72.8
+Night,Foggy,Local,110,1.5,53.2
+Morning Rush,Foggy,Arterial,110,2.22,70.53
+Night,Cloudy,Arterial,403,3.46,75.52
+Evening Rush,Foggy,Arterial,77,1.73,78.3
+Evening Rush,Clear,Highway,491,0.38,47.85
+Night,Rainy,Highway,92,1.93,72.94
+Morning Rush,Foggy,Local,218,4.73,92.12
+Afternoon,Clear,Local,472,3.24,57.14
+Evening Rush,Foggy,Highway,135,3.39,96.85
+Morning Rush,Rainy,Local,226,3.2,88.26
+Morning Rush,Clear,Highway,66,1.08,35.73
+Afternoon,Rainy,Intersection,147,2.15,58.4
+Evening Rush,Rainy,Arterial,247,3.78,100.0
+Evening Rush,Clear,Arterial,147,0.6,32.71
+Morning Rush,Clear,Local,114,1.46,32.35
+Morning Rush,Clear,Highway,379,1.45,49.07
+Afternoon,Cloudy,Highway,390,2.22,56.01
+Afternoon,Clear,Local,54,4.9,51.96
+Evening Rush,Clear,Highway,51,0.43,39.72
+Night,Clear,Intersection,71,2.64,54.64
+Evening Rush,Clear,Arterial,161,0.98,37.83
+Morning Rush,Foggy,Local,106,4.86,97.82
+Evening Rush,Cloudy,Local,115,0.66,37.47
+Night,Rainy,Highway,379,2.08,66.73
+Afternoon,Clear,Local,147,3.72,52.68
+Night,Foggy,Intersection,193,3.55,94.14
+Night,Foggy,Highway,417,2.17,90.33
+Night,Foggy,Highway,484,1.8,82.98
+Afternoon,Rainy,Highway,174,2.05,58.5
+Night,Clear,Highway,216,1.39,41.52
+Night,Cloudy,Intersection,135,1.11,50.52
+Night,Cloudy,Highway,125,2.47,50.85
+Morning Rush,Foggy,Local,393,1.42,67.72
+Night,Rainy,Intersection,473,1.51,77.91
+Afternoon,Rainy,Arterial,343,3.32,71.17
+Night,Rainy,Arterial,493,4.85,99.44
+Night,Cloudy,Local,108,3.06,50.78
+Afternoon,Foggy,Local,187,0.48,48.29
+Night,Clear,Intersection,148,0.47,37.21
+Afternoon,Cloudy,Arterial,241,4.76,72.01
+Night,Foggy,Arterial,292,1.56,63.12
+Afternoon,Foggy,Arterial,368,0.55,60.7
+Night,Clear,Arterial,98,3.04,51.49
+Night,Clear,Arterial,497,3.16,62.95
+Morning Rush,Clear,Highway,81,3.28,65.53
+Morning Rush,Rainy,Local,440,1.41,69.5
+Night,Clear,Highway,326,0.17,30.67
+Night,Foggy,Arterial,69,4.83,90.55
+Evening Rush,Clear,Intersection,203,1.33,53.96

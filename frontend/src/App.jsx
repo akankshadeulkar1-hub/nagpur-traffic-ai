@@ -1,49 +1,119 @@
 /**
- * App.jsx - Nagpur Traffic Control Room Dashboard
- * ------------------------------------------------
+ * App.jsx - Nagpur Traffic Command Center Dashboard & Multi-Screen Orchestrator
+ * -------------------------------------------------------------------------------
  * Purpose: Real-time control room dashboard layout pairing live Nagpur city traffic map
- * telemetry with Explainable AI (XAI) dispatch recommendations.
+ * telemetry with Explainable AI (XAI) dispatch recommendations and multi-screen auth workflow.
  */
 
-import React from 'react';
+import React, { useState } from 'react';
+import SplashScreen from './components/SplashScreen';
+import LandingPage from './components/LandingPage';
+import LoginPage from './components/LoginPage';
+import CommandDashboard from './components/CommandDashboard';
 import TrafficMap from './components/TrafficMap';
 import Alerts from './components/Alerts';
+import './App.css';
 
+/**
+ * App Component - Top Level State Orchestrator
+ * Controls state across 4 distinct screens:
+ * 1. Screen 1: Splash Screen (Auto-dismisses after 2.5s)
+ * 2. Screen 2: Introductory / Landing Page (Separate Full Screen)
+ * 3. Screen 3: Dedicated Authorization & Login Page (Y-axis Slide Down)
+ * 4. Screen 4: Live Tactical Command Dashboard with XAI Alerts
+ */
 function App() {
+  // Screen state: 'SPLASH' | 'LANDING' | 'LOGIN' | 'AUTHENTICATING' | 'DASHBOARD'
+  const [currentScreen, setCurrentScreen] = useState('SPLASH');
+  const [userAuth, setUserAuth] = useState({
+    isAuthenticated: false,
+    badgeId: 'NGP-TP-8841',
+    sector: 'Sitabuldi Zone',
+  });
+  const [authError, setAuthError] = useState('');
+
+  // Screen 1 -> Screen 2 Transition
+  const handleSplashComplete = () => {
+    setCurrentScreen('LANDING');
+  };
+
+  // Screen 2 -> Screen 3 Transition (Triggered by PROCEED TO OFFICER AUTHENTICATION ↓)
+  const handleProceedToAuth = () => {
+    setCurrentScreen('LOGIN');
+  };
+
+  // Screen 3 -> Screen 2 Back Transition (Triggered by ↑ Return to System Overview)
+  const handleBackToLanding = () => {
+    setCurrentScreen('LANDING');
+  };
+
+  // Screen 3 -> Screen 4 Transition (Triggered by VERIFY & ENTER COMMAND CENTER)
+  const handleAuthenticate = ({ badgeId, sector }) => {
+    setAuthError('');
+    setCurrentScreen('AUTHENTICATING');
+
+    // 0.5s loading authentication token spinner overlay before entering Screen 4
+    setTimeout(() => {
+      setUserAuth({
+        isAuthenticated: true,
+        badgeId: badgeId || 'NGP-TP-8841',
+        sector: sector || 'Sitabuldi Zone',
+      });
+      setCurrentScreen('DASHBOARD');
+    }, 550);
+  };
+
+  // Logout / Lock Gateway
+  const handleLogout = () => {
+    setUserAuth({
+      isAuthenticated: false,
+      badgeId: 'NGP-TP-8841',
+      sector: 'Sitabuldi Zone',
+    });
+    setCurrentScreen('LANDING');
+  };
+
+  // Reset to Splash
+  const handleResetToSplash = () => {
+    setCurrentScreen('SPLASH');
+  };
+
   return (
-    <div className="flex h-screen w-screen bg-slate-900 text-white overflow-hidden font-sans">
-      {/* Left Main Section (75% Width): Header & Traffic Map */}
-      <div className="w-[75%] h-full flex flex-col p-4 border-r border-slate-700/80 box-border gap-4">
-        {/* Command Center Header */}
-        <header className="bg-slate-800/90 backdrop-blur-md border border-slate-700/80 px-6 py-4 rounded-xl flex items-center justify-between shadow-lg shrink-0">
-          <div className="flex items-center gap-3">
-            <div className="h-3 w-3 rounded-full bg-emerald-500 animate-pulse" />
-            <h1 className="text-xl md:text-2xl font-bold tracking-tight text-slate-100">
-              Nagpur Traffic Command Center
-            </h1>
-            <span className="hidden sm:inline-block bg-slate-700/60 text-slate-300 text-xs font-semibold px-2.5 py-1 rounded-md border border-slate-600/50">
-              AI Monitoring System
-            </span>
-          </div>
+    <div className="relative min-h-screen bg-[#0B0E14] text-slate-100 font-sans selection:bg-[#00D8F6] selection:text-black overflow-x-hidden">
 
-          <div className="flex items-center gap-4 text-xs md:text-sm text-slate-400 font-medium">
-            <div className="flex items-center gap-2 bg-slate-900/60 px-3 py-1.5 rounded-lg border border-slate-700/50">
-              <span className="text-slate-400">Region:</span>
-              <span className="text-slate-200 font-semibold">Nagpur Urban (MH-31)</span>
-            </div>
-          </div>
-        </header>
+      {/* Screen 1: Splash Screen */}
+      {currentScreen === 'SPLASH' && (
+        <SplashScreen onComplete={handleSplashComplete} />
+      )}
 
-        {/* Live Traffic Map Container */}
-        <div className="flex-1 w-full relative min-h-0">
-          <TrafficMap />
-        </div>
-      </div>
+      {/* Screen 2: Introductory / Landing Page (Always rendered behind Screen 3 for seamless Y-axis slide down) */}
+      {currentScreen !== 'SPLASH' && currentScreen !== 'DASHBOARD' && (
+        <LandingPage
+          onProceedToAuth={handleProceedToAuth}
+          onResetToSplash={handleResetToSplash}
+        />
+      )}
 
-      {/* Right Sidebar Section (25% Width): XAI Recommendations */}
-      <div className="w-[25%] h-full p-4 box-border min-h-0">
-        <Alerts />
-      </div>
+      {/* Screen 3: Dedicated Authorization & Login Page (Slides down along Y-axis) */}
+      {(currentScreen === 'LOGIN' || currentScreen === 'AUTHENTICATING') && (
+        <LoginPage
+          isOpen={currentScreen === 'LOGIN' || currentScreen === 'AUTHENTICATING'}
+          onBackToLanding={handleBackToLanding}
+          onAuthenticate={handleAuthenticate}
+          authError={authError}
+          isAuthenticating={currentScreen === 'AUTHENTICATING'}
+        />
+      )}
+
+      {/* Screen 4: Live Tactical Command Dashboard */}
+      {currentScreen === 'DASHBOARD' && userAuth.isAuthenticated && (
+        <CommandDashboard
+          userSector={userAuth.sector}
+          badgeId={userAuth.badgeId}
+          onLogout={handleLogout}
+        />
+      )}
+
     </div>
   );
 }

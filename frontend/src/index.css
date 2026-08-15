@@ -1,25 +1,187 @@
 @import "tailwindcss";
 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@layer base {
+  :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
 
-  color-scheme: dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #0f172a;
+    color-scheme: dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #0d1117;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --bg-base: #0D1117;
+    --card-surface: #151922;
+    --card-border: #212936;
+    --header-block: #121620;
+    --header-border: #1F2633;
+    --coral-red: #FA5252;
+    --warning-amber: #FAB005;
+    --status-green: #10B981;
+    --tactical-cyan: #22D3EE;
+    --text-primary: #FFFFFF;
+    --text-secondary: #8B949E;
+  }
+
+  html,
+  body {
+    background-color: #0D1117;
+    color: #FFFFFF;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  #root {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', 'Roboto Mono', monospace;
+  }
 }
 
-html, body, #root {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-color: #0f172a;
+/* Custom Tactical Background Grid Overlay */
+.bg-tactical-grid {
+  background-image:
+    linear-gradient(to right, rgba(34, 211, 238, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(34, 211, 238, 0.035) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.bg-tactical-radial {
+  background: radial-gradient(circle at 50% 30%, rgba(34, 211, 238, 0.06) 0%, rgba(21, 25, 34, 0.95) 70%, #0D1117 100%);
+}
+
+/* Glassmorphism & Tactical Card Style */
+.tactical-card-v3 {
+  background-color: rgba(21, 25, 34, 0.92);
+  backdrop-filter: blur(14px);
+  border: 1px solid #212936;
+  box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.65), 0 0 20px -5px rgba(34, 211, 238, 0.06);
+}
+
+.tactical-card-v3-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tactical-card-v3-hover:hover {
+  border-color: rgba(34, 211, 238, 0.4);
+  box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.85), 0 0 25px -3px rgba(34, 211, 238, 0.18);
+}
+
+/* Radar Pulse Sonar Keyframes in Cyan/Emerald (#22D3EE / #10B981) */
+@keyframes sonar-pulse {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.9;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+.animate-sonar-pulse {
+  animation: sonar-pulse 2.5s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.animate-sonar-pulse-delayed {
+  animation: sonar-pulse 2.5s cubic-bezier(0, 0.2, 0.8, 1) infinite 1.25s;
+}
+
+/* Glow Effects */
+.glow-coral {
+  box-shadow: 0 0 30px rgba(250, 82, 82, 0.5);
+}
+
+.glow-cyan-v3 {
+  box-shadow: 0 0 25px rgba(34, 211, 238, 0.4);
+}
+
+.text-glow-cyan-v3 {
+  text-shadow: 0 0 14px rgba(34, 211, 238, 0.7);
+}
+
+/* Typewriter Cursor */
+@keyframes cursor-blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.typewriter-cursor::after {
+  content: '│';
+  color: #22D3EE;
+  margin-left: 2px;
+  animation: cursor-blink 0.8s infinite;
+}
+
+/* Subtext Fade-in Keyframe */
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Leaflet Dark Popup Customization */
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: #151922 !important;
+  color: #FFFFFF !important;
+  border: 1px solid #212936 !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.85) !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar,
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track,
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #0D1117;
+}
+
+::-webkit-scrollbar-thumb,
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #212936;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover,
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #22D3EE;
 }
