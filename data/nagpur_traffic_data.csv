@@ -1,0 +1,6 @@
+junction_id,junction_name,latitude,longitude,vehicle_count,average_speed_kmh,weather_condition,congestion_level,risk_score
+J01,Variety Square,21.1458,79.0882,450,18,Clear,High,0.78
+J02,Zero Mile Freedom Park,21.1498,79.0806,380,22,Clear,Medium,0.55
+J03,Rahate Colony Square,21.1242,79.0763,510,12,Rainy,Severe,0.91
+J04,Medical Square,21.1347,79.0984,420,15,Clear,High,0.72
+J05,Chhatrapati Square,21.1105,79.0614,490,14,Clear,Severe,0.85

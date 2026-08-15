@@ -1,0 +1,2 @@
+# Nagpur Traffic AI Engine - Saved Risk Scorer Model Placeholder (risk_scorer.pkl)
+# Generated model file will be saved binary here after running train_model.py
